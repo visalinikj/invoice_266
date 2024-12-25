@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container" id="form-container">
+        <h1>Invoice Generator</h1>`
+        <form id="invoice-form">
+            <div>
+                <label for="customer-name">Customer Name:</label>
+                <input type="text" id="customer-name" required>
+            </div>
+            <div>
+                <label for="customer-address">Customer Address:</label>
+                <input type="text" id="customer-address" required>
+            </div>
+            <div id="item-inputs">
+                <div>
+                    <label for="item-description-1">Item Description:</label>
+                    <input type="text" id="item-description-1" required>
+                </div>
+                <div>
+                    <label for="item-quantity-1">Quantity:</label>
+                    <input type="number" id="item-quantity-1" required>
+                </div>
+                <div>
+                    <label for="item-price-1">Price:</label>
+                    <input type="number" id="item-price-1" required>
+                </div>
+            </div>
+            <button type="button" id="add-item-button">Add Item To Invoice</button>
+            <button type="button" id="finish-button">Add Name&Address</button>
+        </form>
+    </div>      
+    <div class="invoice-container" id="invoice-container">
+        <div ><br></div>
+       <div style="background-color:#e3d5ca;color:black;"><hr><h1><div align="left"><strong>DREAM STITCHES<Strong>
+    </div></h1><div align="left">ADORE YOURSELF!!! &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp &nbsp &nbsp &nbsp#INVOICE24022007</div><hr></div>
+        <div id="customer-details">
+            <h2>Customer Details</h2>
+            <p>Name : <span id="invoice-customer-name"></span></p>
+            <p>Address : <span id="invoice-customer-address"></span></p>
+        </div>
+        <hr>
+        <div>
+            <p>Salesperson  : Vandhana<br><br>Due Date  : 31/12/2024</p>
+        </div>
+        <hr>
+        <div id="item-details">
+            <h2>Item Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total Price</th>
+                    </tr>
+                </thead>
+                <tbody id="items-table-body">
+                </tbody>
+            </table>
+        </div>
+        <div id="totals">
+            <p>Subtotal: <span id="subtotal"></span></p>
+            <p>Tax: <span id="tax"></span></p>
+            <p>Total: <span id="total"></span></p>
+        </div>
+        <br>
+        <div style="background-color:#e3d5ca;color:black;"><hr><div align="left"><b>CONTACT G-MAIL&#128231:</b>kjvisalini2007@gmail.com</div>
+        <br><div align="left"><b>CONTACT NO   </b>&#128383:+91 9360128987</div><hr></div>
+       <div><br><br></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
